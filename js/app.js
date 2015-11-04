@@ -1,8 +1,9 @@
 $(document).ready(function() {
 	$('.ryu').mouseenter(function() {
     	$('.ryu-still').hide();
+		$('.ryu-shoryuken').hide();
 		$('.ryu-ready').show();
-		$('ryu-shoryuken').hide();
+		
   })
 	.mouseleave(function() {
    		$('.ryu-ready').hide();
@@ -41,8 +42,8 @@ $(document).ready(function() {
  	.keypress(function(e){
  		if (e.which == 83 && e.shiftKey){
  			$('.ryu-still').hide();
- 			playShoryuken();
  			$('.ryu-shoryuken').show();
+
  		}
  	});
 });
@@ -51,4 +52,9 @@ function playHadouken () {
   $('#hadouken-sound')[0].volume = 0.5;
   $('#hadouken-sound')[0].load();
   $('#hadouken-sound')[0].play();
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> refs/remotes/origin/master
