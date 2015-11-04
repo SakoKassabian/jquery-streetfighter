@@ -2,7 +2,7 @@ $(document).ready(function() {
 	$('.ryu').mouseenter(function() {
     	$('.ryu-still').hide();
 		$('.ryu-ready').show();
-		$('ryu-shoryuken').hide();
+		
   })
 	.mouseleave(function() {
    		$('.ryu-ready').hide();
@@ -41,7 +41,7 @@ $(document).ready(function() {
  	.keypress(function(e){
  		if (e.which == 83 && e.shiftKey){
  			$('.ryu-still').hide();
- 			playShoryuken();
+ 			
  			$('.ryu-shoryuken').show();
  		}
  	});
@@ -53,8 +53,3 @@ function playHadouken () {
   $('#hadouken-sound')[0].play();
 }
 
-function playShoryuken () {
-  $('#shoryuken-sound')[0].volume = 0.5;
-  $('#shoryuken-sound')[0].load();
-  $('#shoryuken-sound')[0].play();
-}
