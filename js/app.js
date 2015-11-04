@@ -21,7 +21,7 @@ $(document).ready(function() {
     $(this).css('left', '610px');
   }
 );
-  })
+  }) 
   .mouseup(function() {
      $('.ryu-throwing').hide();
   	$('.ryu-ready').show();
