@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	$('.ryu').mouseenter(function() {
     	$('.ryu-still').hide();
+		$('.ryu-shoryuken').hide();
 		$('.ryu-ready').show();
 		
   })
@@ -41,8 +42,8 @@ $(document).ready(function() {
  	.keypress(function(e){
  		if (e.which == 83 && e.shiftKey){
  			$('.ryu-still').hide();
- 			
  			$('.ryu-shoryuken').show();
+
  		}
  	});
 });
